@@ -36,7 +36,7 @@ def define_config():
   config.log_scalars = True
   config.log_images = True
   config.gpu_growth = True
-  config.precision = 16
+  config.precision = 32  # it was 16
   # Environment.
   config.task = 'dmc_walker_walk'
   config.envs = 1
