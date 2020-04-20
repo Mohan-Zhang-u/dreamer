@@ -74,9 +74,9 @@ def define_config():
   config.discount = 0.99
   config.disclam = 0.95
   config.horizon = 15
-  config.action_dist = 'tanh_normal'
+  config.action_dist = 'onehot'  # dmc: 'tanh_normal'; atari: 'onehot'
   config.action_init_std = 5.0
-  config.expl = 'additive_gaussian'
+  config.expl = 'epsilon_greedy'  # dmc: 'additive_gaussian'; atari: 'epsilon_greedy'
   config.expl_amount = 0.3
   config.expl_decay = 0.0
   config.expl_min = 0.0
